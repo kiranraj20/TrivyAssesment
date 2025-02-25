@@ -8,6 +8,12 @@
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
+    "assetBundlePatterns": ["**/*"],
+    "fonts": [
+      {
+        "Stalker": "./assets/fonts/Stalker.ttf"
+      }
+    ],
     "ios": {
       "supportsTablet": true
     },
