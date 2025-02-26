@@ -10,18 +10,16 @@ import {
   Easing,
 } from "react-native";
 import Ionicons from "@expo/vector-icons/Ionicons";
-import Feather from "@expo/vector-icons/Feather";
-import NavBar from "./navBar";
 import * as Font from "expo-font";
 import { useEffect, useRef, useState } from "react";
-import Card from "./card";
+import Card from "../components/card";
 
 export default function Index() {
   const [freeze, setFreeze] = useState(true);
 
   const loadFonts = async () => {
     await Font.loadAsync({
-      Stalker: require("../assets/fonts/Stalker1.ttf"),
+      Stalker: require("../../assets/fonts/Stalker1.ttf"),
     });
   };
 
@@ -142,7 +140,7 @@ export default function Index() {
         >
           {freeze ? (
             <AnimatedImageBackground
-              source={require("../assets/images/BackgroundBlur.png")}
+              source={require("../../assets/images/BackgroundBlur.png")}
               resizeMode="cover"
               style={{
                 width: 186,
@@ -190,7 +188,6 @@ export default function Index() {
           </Pressable>
         </View>
       </View>
-      <NavBar />
     </SafeAreaView>
   );
 }

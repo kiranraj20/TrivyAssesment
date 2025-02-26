@@ -4,11 +4,11 @@ import React, { useEffect, useRef, useState } from "react";
 import { SvgUri } from "react-native-svg";
 import { faker } from "@faker-js/faker";
 import Ionicons from "@expo/vector-icons/Ionicons";
-import Bank from "../assets/svg/Bank.svg";
-import Logo from "../assets/svg/Logo.svg";
-import Copy from "../assets/svg/Copy.svg";
-import Rupay from "../assets/svg/Rupay.svg";
-import Union from "../assets/svg/Union.svg";
+import Bank from "../../assets/svg/Bank";
+import Logo from "../../assets/svg/Logo";
+import Copy from "../../assets/svg/Copy";
+import Rupay from "../../assets/svg/Rupay";
+import Union from "../../assets/svg/Union";
 
 const AnimatedImageBackground =
   Animated.createAnimatedComponent(ImageBackground);
@@ -37,7 +37,7 @@ const card = () => {
 
   return (
     <AnimatedImageBackground
-      source={require("../assets/images/Background.png")}
+      source={require("../../assets/images/Background.png")}
       resizeMode="cover"
       style={{
         width: 186,
